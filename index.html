@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine</title>
+    <link rel="stylesheet" href="static/styles/style.css">
+    <link rel="icon" href="static/pictures/Heart_icon.jpg">
+</head>
+<body>
+    <div>
+        <a href="#" id="startlink">НАЧАТЬ!</a>
+    </div>
+    <div class="container">
+        <div id="step1"><img src="static/pictures/first_gif.gif" alt="">
+            <p>Сначала я задумался, <br> что бы мне такого особенного подарить своей девушке...</p>
+            <p><a href="#" id="link1">Дальше</a></p>
+        </div>
+        <div id="step2"><img src="static/pictures/third_gif.gif" alt="">
+            <p>И тут мне в голову пришла гениальная идея!</p>
+            <p><a href="#" id="link2">Дальше</a></p>
+        </div>
+        <div id="step3"><img src="static/pictures/second_gif.gif" alt="">
+            <p>Написать страничку в гугле для неё с поздравлением<br>и рассказом о том как мне пришла в голову эта идея</p>
+            <p><a href="#" id="link3">Дальше</a></p>
+        </div>
+        <div id="step4"><img src="static/pictures/third_gif.gif" alt="">
+            <p>Это я радуюсь что у меня всё получилось</p>
+            <p><a href="#" id="link4">Дальше</a></p>
+        </div>
+        <div id="step5"><img src="static/pictures/last_gif.gif" alt="">
+            <p>Это то самое поздравление. <br> С днём всех влюблённых, крошка! <br> Люблю тебя♥  </p>
+            <p><a href="#" id="link5">Дальше</a></p>
+            
+        </div>
+        <div id="step6"><img src="static/pictures/waiting_gif.gif" alt="">
+            <p>Это я жду пока наступит 14 февраля и ты посмотришь что я сделал.</p>
+            <p><a href="#" id="link6">Дальше</a></p>
+        </div>
+        <div id="step7"><img src="static/pictures/second_gif.gif" alt="">
+            <p>Это наступило 14 февраля и я отправляю тебе ссылочку и поздравляю лично</p>
+            <p><a href="#" id="link7">Дальше</a></p>
+        </div>
+        <div id="step8"><img src="static/pictures/third_gif.gif" alt="">
+            <p>Это я радуюсь что тебе понравилось (если нет то обнови страничку)</p>
+            <p><a href="#" id="link8">Дальше</a></p>
+            
+        </div>
+        <div id="lastStep">
+            <p>А дальше ничего нет.</p>
+        </div>
+    </div>
+
+    <script>
+        var startlink = document.getElementById('startlink');
+        var link1 = document.getElementById('link1');
+        var link2 = document.getElementById('link2');
+        var link3 = document.getElementById('link3');
+        var link4 = document.getElementById('link4');
+        var link5 = document.getElementById('link5');
+        var link6 = document.getElementById('link6');
+        var link7 = document.getElementById('link7');
+        var link8 = document.getElementById('link8');
+
+        var lastLink = document.getElementById('lastLink')
+
+        var step1 = document.getElementById('step1');
+        var step2 = document.getElementById('step2');
+        var step3 = document.getElementById('step3');
+        var step4 = document.getElementById('step4');
+        var step5 = document.getElementById('step5');
+        var step6 = document.getElementById('step6');
+        var step7 = document.getElementById('step7');
+        var step8 = document.getElementById('step8');
+
+        var lastStep = document.getElementById('lastStep')
+
+        startlink.addEventListener('click', function () {
+            
+            step1.style.display = 'block';
+
+            startlink.style.display = 'none';
+
+        })
+
+        link1.addEventListener('click', function () {
+            
+            step2.style.display = 'block';
+
+            step1.style.display = 'none';
+
+        })
+
+        link2.addEventListener('click', function () {
+            
+            step3.style.display = 'block';
+
+            step2.style.display = 'none';
+
+        })
+        link3.addEventListener('click', function () {
+            
+            step4.style.display = 'block';
+
+            step3.style.display = 'none';
+
+        })
+        link4.addEventListener('click', function () {
+            
+            step6.style.display = 'block';
+
+            step4.style.display = 'none';
+
+        })
+        link6.addEventListener('click', function () {
+            
+            step7.style.display = 'block';
+
+            step6.style.display = 'none';
+
+        })
+        link7.addEventListener('click', function () {
+            
+            step5.style.display = 'block';
+
+            step7.style.display = 'none';
+
+        })
+        link5.addEventListener('click', function () {
+            
+            step5.style.display = 'none';
+
+            step8.style.display = 'block';
+
+            lastMessage.style.display = "none";
+
+        })
+        link8.addEventListener('click', function () {         
+
+            step8.style.display = 'none';
+
+            lastStep.style.display = 'block';
+
+        })
+
+    </script>
+</body>
+</html>
