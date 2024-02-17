@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    vertical-align: middle;
+    padding-top: 20px;
+}
+
+.container {
+    padding-top: 10%;
+    align-content: center;
+}
+
+.container>div{
+    text-align: center;
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#startlink{
+    margin: 50%;
+}
+
+img {
+    width: 300px;
+}
+
+#step5{
+    margin-top: 100px;
+}
+
+#step6{
+    margin-top: 50px;
+}
+#step7{
+    margin-top: 100px;
+}
+#step8{
+    margin-top: px;
+}
