@@ -35,6 +35,7 @@
 }
 span{
     color: transparent;
+    transition: color 0.2s;
 }
 
 .reg-container>div>input{
