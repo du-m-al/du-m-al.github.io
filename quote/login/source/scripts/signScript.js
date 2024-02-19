@@ -28,7 +28,7 @@ function checkPassword(){
     if(inputUsername.value !== userName && inputUsername.value !== '' || inputPassword.value !== password && inputPassword.value !== ''){
         inputUsername.style.backgroundColor = 'rgb(255, 150, 150)';
         inputPassword.style.backgroundColor = 'rgb(255, 150, 150)';
-        usernameInputError.textContent = 'Wrong password or username.';
+        passwordInputError.textContent = 'Wrong password or username.';
         passwordInputError.style.color = 'rgb(255, 150, 150)';
     }
     if(inputUsername.value === userName && inputPassword.value === password){
